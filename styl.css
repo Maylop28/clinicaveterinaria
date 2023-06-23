@@ -7,42 +7,92 @@
 }
 
 body{
-    background-size: aquamarine;
+    background-image: url(imagenes/huellas.jpg);
     border-color: black;
     border-style:groove;
 }
 
-.container{
+.container-1{
     border-style:groove;
-    border-radius: 10px;
+    border-radius: 12px;
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin:auto;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgb(15, 15, 15,5);
+}
+
+.container-2{
+    border-style:groove;
+    border-radius: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+text{
+    padding-left: 25px;
 }
 input{
     border-bottom: 2px solid black;
     background-color: #E6DBD3;
 }
-h3{
+#input {
+        border: none;
+        border-bottom: 2px solid black;
+        background-color: #E6DBD3;
+        width: 300px;
+}
+h1{
+    font-size: medium;
+    ;
+}
+h4{
     align-content: center;
+}
+p{
+    font-style:inherit;
 }
 footer{
     background-color: black;
     font-style: italic;
+    color:#E6DBD3;
 }
 
 @media (max-width:767px)  {
  body{
-
+    .container-1{
+        max-width: 1000px;
+     min-width: 320px;
+    } 
+    
+    div.container-fluit{
+     min-width: 320px;
+    }
+    .container-2{
+     min-width: 320px;
+    } 
+    .section{
+     min-width: 32px;
+    }
  }
 }
 
 
 section{
     display:flex;
-    width: 600px;
+    width: 200px;
     height: 430px;
     border:#E6DBD3;
     border-style: groove;
     border-radius: 5%;
-    
+    max-width: 1000px;
+    min-width: 320px;
 }
 
 section img{
@@ -52,6 +102,7 @@ section img{
     opacity: .8;
     transition: .5s ease;
     border-radius: 6%;
+    
 }
 
 section img:hover{
@@ -59,4 +110,8 @@ section img:hover{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+    
+}
+img, svg {
+    vertical-align: middle;
 }
